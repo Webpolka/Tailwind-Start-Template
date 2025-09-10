@@ -36,11 +36,47 @@ h6 {
 /* ------------------------------------------------------------------------------------------------------------------------------
 BASE
 --------------------------------------------------------------------------------------------------------------------------------*/
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+*:focus, *:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
+html,
 body {
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+body {
+  overscroll-behavior: none;
+  text-rendering: optimizelegibility;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  font-family: var(--font-main);
+  font-size: 1rem;
+  font-weight: 400;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   text-wrap: balance;
 }
 
