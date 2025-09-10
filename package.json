@@ -5,7 +5,7 @@
 	"main": "gulpfile.js",
 	"type": "module",
 	"scripts": {
-		"dev": "concurrently \"npx @tailwindcss/cli -i ./src/scss/tailwind/import.css -o ./src/vendor/tailwind-output.css --watch\" \"gulp\""		
+		"dev": "concurrently \"npx @tailwindcss/cli -i ./src/scss/tailwind/import.css -o ./src/vendor/tailwind-output.css --watch\" \"gulp\""
 	},
 	"keywords": [
 		"gulp",
@@ -21,6 +21,7 @@
 		"autoprefixer": "^10.4.21",
 		"browser-sync": "^2.27.7",
 		"chalk": "^5.2.0",
+		"chokidar": "^4.0.3",
 		"concurrently": "^9.2.1",
 		"del": "^6.0.0",
 		"esbuild-loader": "^4.3.0",
